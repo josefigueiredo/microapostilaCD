@@ -1,13 +1,86 @@
 \chapter{Sistemas de numeração}
 \label{sinais}
 
-Em construção
+Os sistemas de numeração são diferentes formas para representação de quantidades. Esta representação é feita organizando os dígitos em função de uma determinada base. 
+
+Também é importante entender que um sistema poderá ser aplicável em algumas siutações e em outras não. A seguir alguns dos principais sistemas de numeração conhecidos:
+
+\begin{itemize}
+	\item Sistema Unário: Remonta a idade antiga na históira da humanidade. A contagem era feita pelo método da comparação. O pastor, ao contar suas ovelhas, precisava de uma bolsa contendo uma pedra pra cada ovelha. 
+	\item Sistema Duodecimal: Deu origem aos termos dúzia e grosa\footnote{1 dúzia de dúzias.}. Este sistema não é muito difundido e acredita-se que tenha surgido com a contagem das falanges dos dedos para contar. 
+	\item Sistema Sexagesimal: Deu origem ao sistema de contagem de horas, minutos e segundos, bem como ângulos em graus.
+\end{itemize}
+
+Atualmente o princpal sistema numérico é o decimal, revisado na seção~\ref{sistemaDecimal}. Em Ciência da Computação os sistemas mais usados são o binário, o hexadecimal e o octal, discutidos na seção~\ref{basesComput}.
+
+\section{Revisão do sistema Decimal}
+\label{sistemaDecimal}
+
+Quanto estávamos no ensiono fundamental, alguns de nossos professores nos ensinaram a ler um número usando uma ferramenta concreta chamada Quadro Valor de Lugar. Neste quadro, apresentado na Figura~\ref{fig:qvl}, os professores ensinaram que quando colocamos um numero ali ele tem um valor em funçao da posição que ocupa. 
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.6\textwidth]{img/sistemasNum/qvl.png}
+		\caption{Quadro Valor de Lugar (Fonte: Figura da Internet)}
+		\label{fig:qvl}
+	\end{center}
+\end{figure}
+
+Descrição da Figura~\ref{fig:qvl}: Uma diagrama com 3 espaços vazios identificados como Unidade, Dezena e Centena, nessa ordem da direita para esquerda. O diagrama possui motivos infantis e marcações coloridas.
+
+Por exemplo: ao preencher o quadro com os números 1 (na centena), 2 (na dezena) e 4 (na unidade), o valor encontrado será \(100 + 20 + 4\), ou seja Cento e Vinte e Quatro.
+
+Isto acontece porque o sistema decimal é posicional, ou seja, o dígito assume um valor em função de sua posição na representação numérica. Isto pode ser explicado matematicamente pelo polinômio da Fórmula~\ref{polinomio}, que demonstra:
+
+\begin{equation}\label{polinomio}
+N=d_1.\beta^{1-1}+d_2.\beta^{2-1}+d_3.\beta^{3-1}+d_4.\beta^{4-1}+...d_t.\beta^{t-1}
+\end{equation}
+
+onde,
+\begin{itemize}
+	\item N: Valor do número;
+	\item $\beta$: Base do número;
+	\item t: Tamanho do número ou quantidade de dígitos (iniciando em 1);
+	\item $d_t$: Dígito na posição;
+\end{itemize}
+
+Esta equação pode representada de forma mais condensada, fazendo uso da simbologia de somatório\footnote{"Google it".}. Veja a Equação~\ref{eq:sum}
+
+\begin{equation}\label{eq:sum}
+N=\sum_{i=1}^{t}d_i.\beta^{i-1}
+\end{equation}
+
+Para melhor compreensão vamos resolver o caso anteriormente resolvido pelo Quadro Valor de Lugar. Usamos uma tabela para melhor representar a ideia.
+
+\noindent\textbf{Exemplo: 124}
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|r|r|r|r|}
+		\hline
+		Dígitos 	&  & 1 & 2 & 4  \\
+		\hline
+		Posição do dígito na representação:	& 4 & 3 & 2 & 1  \\
+		\hline
+	\end{tabular}
+\end{table}
+
+Observe que não há um numero na posição 4 - seria uma 'casa vazia'.
+
+Sabendo que a base é decimal, portanto $\beta=10$ e aplicando a equação~\ref{eq:sum} temos:
+
+\begin{center}
+\( N=4.10^{0}+2.10^{1}+1.10^{2}\) \\
+\( N=4.1+2.10+1.100 \) \\
+\( N=4+20+100 \) \\
+\( N = 124\)\\
+\end{center}
+Ou seja, a representação 124 tem valor Cento e Vinte e Quatro. 
 
 
-\section{Bases numéricas}
-\label{bases}
+\section{Bases numéricas da Computação}
+\label{basesComput}
+O sistema posicional apresentado no cálculo do valor da representação numérica é o mesmo para os outros sistemas, mudando apenas a base.
 
-\subsection{Decimal}
 \subsection{Binária}
 \subsection{Hexadecimal}
 \subsection{Octal}
@@ -433,3 +506,16 @@ A resposta esperada também será um número negativo (-11). Ao efetuarmos a con
 	\end{tabular}
 \end{table}
 * o 7º bit ($d_6$) excede a quantidade de bits "reservada" para a conta (que no caso é 6 bits). Neste caso este bit que excede é DESCARTADO. O bit mais significativo da reposta ($d_5$) tem valor 1, o que indica que o resultado é um número negativo.
+
+
+
+bibliografia desta seção
+3 História da matemática: e-book - como surgiram
+alguns conceitos matemáticos? / Valdirene da Rosa
+Rocho; Carla Margarete Ferreira dos Santos;
+Margarete Faria Medeiros; Carla Sofia Dias Brasil;
+Taís Pereira da Silva (Orgs.). -- Sombrio:
+%Instituto Federal Catarinense, 2018. Disponível em %https://editora.ifc.edu.br/wp-content/uploads/sites/33/2018/11/e-book_historia_da_matematica_ultima_versao.pdf
+
+FRAGA, Carina Ribeiro et al. Números naturais: introdução, sistemas de numeração. 2013.
+http://www.labeduc.fe.usp.br/wp-content/uploads/Unidade-did%C3%A1tica-N%C3%BAmeros-Naturais-1.pdf

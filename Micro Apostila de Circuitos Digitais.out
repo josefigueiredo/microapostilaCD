@@ -1,0 +1,24 @@
+\BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Tipos de Sinais}{}% 2
+\BOOKMARK [1][-]{section.2.1}{O que \351 anal\363gico}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{O que \351 digital}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Convers\343o de sinais}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Conclus\343o da se\347\343o}{chapter.2}% 6
+\BOOKMARK [0][-]{chapter.3}{Sistemas de numera\347\343o}{}% 7
+\BOOKMARK [1][-]{section.3.1}{Revis\343o do sistema Decimal}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.2}{Bases num\351ricas da Computa\347\343o}{chapter.3}% 9
+\BOOKMARK [2][-]{subsection.3.2.1}{Bin\341ria}{section.3.2}% 10
+\BOOKMARK [2][-]{subsection.3.2.2}{Hexadecimal}{section.3.2}% 11
+\BOOKMARK [2][-]{subsection.3.2.3}{Octal}{section.3.2}% 12
+\BOOKMARK [1][-]{section.3.3}{Introdu\347\343o \340 aritm\351tica bin\341ria}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.3.1}{Soma bin\341ria}{section.3.3}% 14
+\BOOKMARK [2][-]{subsection.3.3.2}{Subtra\347\343o bin\341ria}{section.3.3}% 15
+\BOOKMARK [1][-]{section.3.4}{Representa\347\343o de n\372meros negativos}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.4.1}{Sinal-Magnitude}{section.3.4}% 17
+\BOOKMARK [2][-]{subsection.3.4.2}{Complemento de 1}{section.3.4}% 18
+\BOOKMARK [2][-]{subsection.3.4.3}{Complemento de 2}{section.3.4}% 19
+\BOOKMARK [1][-]{section.3.5}{Opera\347\365es aritm\351ticas em Complemento de 2}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.5.1}{Somar Positivo com Positivo}{section.3.5}% 21
+\BOOKMARK [2][-]{subsection.3.5.2}{Somar Positivo MAIOR com Negativo MENOR}{section.3.5}% 22
+\BOOKMARK [2][-]{subsection.3.5.3}{Somar Positivo MENOR com Negativo MAIOR}{section.3.5}% 23
+\BOOKMARK [2][-]{subsection.3.5.4}{Somar Negativo com Negativo}{section.3.5}% 24
